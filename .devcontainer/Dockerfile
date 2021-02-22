@@ -93,6 +93,7 @@ COPY --from=downloader /tmp/dc-extracted/esp-idf-libs /sources/esp-idf-libs
 COPY --from=downloader /tmp/dc-extracted/xtensa /usr/local/bin/xtensa
 COPY --from=downloader /tmp/dc-extracted/titools/xdctools_3_61_00_16_core /usr/local/bin/titools
 COPY ./scripts/git-pull-repos.sh /usr/local/git-pull-repos.sh
+RUN chmod +x  /usr/local/git-pull-repos.sh
 
 # Putting hex2dfu in the container
 ARG HEX2DFU=https://github.com/nanoframework/hex2dfu/releases/download/v2.0.9/hex2dfu

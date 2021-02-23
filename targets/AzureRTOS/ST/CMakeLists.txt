@@ -3,7 +3,7 @@
 # See LICENSE file in the project root for full license information.
 #
 
-include(nf_utils)
+include(NF_Utils)
 include(STM32_CubePackage)
 
 # (default is OFF so STM Cube package is NOT included)
